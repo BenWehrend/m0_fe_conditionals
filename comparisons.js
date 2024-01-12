@@ -36,12 +36,13 @@ var friends = 6;
 var siblings = 2;
 console.log(friends > siblings);
 // YOU DO: Explain.
+//sets values for siblings and friends, then prints out true if friends are greater than siblings
 
 var attendees = 9;
 var meals = 8;
 console.log(attendees !== meals);
 // YOU DO: Explain.
-
+//set values for meals and attendees, prints true if attendees does not strictly equal meals
 
 // #-------------------
 // PART 3: Logical Operators
