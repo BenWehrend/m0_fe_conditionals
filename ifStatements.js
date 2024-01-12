@@ -3,7 +3,8 @@
 
 // CHALLENGE 1
 // Using the numQuarters variable defined below, determine if you have enough money to buy a gumball. A gumball costs two quarters.
-
+var gumballCost = 2;
+console.log(numQuarters >= gumballCost);
 // Right now, the program will print out both "I have enough money for a gumball" and "I don't have enough money for a gumball". 
 // Write a conditional statement that prints only one or the other.
 // Experiment with manipulating the value held within numQuarters to make sure both conditions can be achieved.
