@@ -27,6 +27,7 @@ console.log("I don't have enough money for a gumball");
 
 // Sorry, if this is wrong, but the 2, 3, an 5 cups of flour for pizza don't make logical sense. How can 2 and 3 cups be enough but 5 somehow isn't?
 var cupsOfFlour = 1;
+var hasSauce = true;
 function makePizza() {
   if(cupsOfFlour === 1) {
     return "I can't make pizza. I need more flour."
