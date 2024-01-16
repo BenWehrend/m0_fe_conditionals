@@ -11,9 +11,20 @@ console.log(numQuarters >= gumballCost);
 
 var numQuarters = 0;
 
+var numQuarters = 6;
+function gumballBuy() {
+  if (numQuarters <= 1) {
+    return "I don't have enough money for a gumball.";
+  }
+  if (numQuarters >= 2) {
+   return "I have enough money for a gumball.";
+  }
+}
+console.log(gumballBuy());
+
+
 console.log("I have enough money for a gumball");
 console.log("I don't have enough money for a gumball");
-
 
 // CHALLENGE 2
 // Using the variables defined below, write code that will tell you if you have the ingredients to make a pizza. 
@@ -25,24 +36,21 @@ console.log("I don't have enough money for a gumball");
 // If cupsOfFlour = 2 and hasSauce = true, print "I can make pizza"
 // If cupsOfFlour = 3 and hasSauce = true, print "I can make pizza"
 
-// Sorry, if this is wrong, but the 2, 3, an 5 cups of flour for pizza don't make logical sense. How can 2 and 3 cups be enough but 5 somehow isn't?
-var cupsOfFlour = 1;
+
+//Re-read it, and now understand what I missed the first time. 
+
+var cupsOfFlour = 3;
 var hasSauce = true;
 function makePizza() {
-  if(cupsOfFlour === 1) {
-    return "I can't make pizza. I need more flour."
+  if(cupsOfFlour === 2 || cupsOfFlour === 3 && hasSauce === true) {
+    return "I can make  pizza.";
   }
-  if(cupsOfFlour === 5) {
-    return "I can make 1 pizza, but need more sauce for 2."
-  }
-  if(cupsOfFlour === 2) {
-    return "I can make one pizza exactly."
-  }
-  if(cupsOfFlour === 3) {
-    return "I have enough for one pizza, but have too little sauce for any more."
+   else if(cupsOfFlour === 1 || cupsOfFlour === 5 && hasSauce === false) {
+    return "I cannot make pizzza.";
   }
 }
-console.log(makePizza())
+console.log(makePizza());
+
 // Experiment with manipulating the value held within both variables to make sure all above conditions output what you expect.
 
 var cupsOfFlour = 1;
