@@ -22,10 +22,6 @@ function gumballBuy() {
 }
 console.log(gumballBuy());
 
-
-console.log("I have enough money for a gumball");
-console.log("I don't have enough money for a gumball");
-
 // CHALLENGE 2
 // Using the variables defined below, write code that will tell you if you have the ingredients to make a pizza. 
 // A pizza requires at least two cups of flour and sauce.
