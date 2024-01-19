@@ -22,6 +22,15 @@ function gumballBuy() {
 }
 console.log(gumballBuy());
 
+Revised:
+function gumballBuy() {
+  if (numQuarters >= 2) {
+    return "I have enough money for a gumball.";
+  }
+  else {
+    return "I don't have neough money for a gumball.";
+  }
+}
 // CHALLENGE 2
 // Using the variables defined below, write code that will tell you if you have the ingredients to make a pizza. 
 // A pizza requires at least two cups of flour and sauce.
@@ -46,6 +55,16 @@ function makePizza() {
   }
 }
 console.log(makePizza());
+
+Revised:
+function makePizza() {
+  if (cupsOfFlour >= 2 && hasSauce === true) {
+    return "I can make pizza.";
+  }
+  else {
+    return "I cannot make pizza.";
+  }
+}
 
 // Experiment with manipulating the value held within both variables to make sure all above conditions output what you expect.
 
